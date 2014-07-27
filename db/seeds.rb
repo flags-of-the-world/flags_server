@@ -6,6 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Flag.destroy_all
+Aggregate.destroy_all
+
 names = [
   "Afghanistan",
   "Albania",
