@@ -1,7 +1,7 @@
 class AggregatesController < ApplicationController
 
   def index
-    render json: { aggregates: Aggregate.all }
+    render json: Aggregate.all.includes(:flag)
   end
 
 end
