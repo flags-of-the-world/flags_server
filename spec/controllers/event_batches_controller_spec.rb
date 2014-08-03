@@ -6,13 +6,13 @@ describe EventBatchesController do
         {
           flag_name:  "Afghanistan",
           mode:       "puzzle",
-          difficulty: "easy",
+          variant:    "easy",
           correct:    "true",
         },
         {
           flag_name:  "Afghanistan",
           mode:       "puzzle",
-          difficulty: "easy",
+          variant:    "easy",
           correct:    "false",
         },
       ]

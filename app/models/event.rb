@@ -1,6 +1,6 @@
 class Event
   include ActiveModel::Model
-  attr_accessor :flag_name, :mode, :difficulty, :correct
+  attr_accessor :flag_name, :mode, :variant, :correct
 
   def correct
     @correct == "true"
@@ -10,7 +10,7 @@ class Event
     aggregate = Aggregate.joins(:flag).where(
       flags: { name: flag_name },
       mode: mode,
-      difficulty: difficulty
+      variant: variant
     ).first
 
     aggregate.correct_count += 1 if correct

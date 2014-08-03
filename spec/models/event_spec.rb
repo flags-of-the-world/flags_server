@@ -10,7 +10,7 @@ describe Event do
       event = Event.new(
         flag_name: "Afghanistan",
         mode: "puzzle",
-        difficulty: "easy",
+        variant: "easy",
         correct: "true"
       )
       event.save
@@ -22,7 +22,7 @@ describe Event do
       event = Event.new(
         flag_name: "Afghanistan",
         mode: "puzzle",
-        difficulty: "easy",
+        variant: "easy",
         correct: "false"
       )
       event.save

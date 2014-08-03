@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20140727144106) do
   create_table "aggregates", force: true do |t|
     t.integer "flag_id"
     t.string  "mode"
-    t.string  "difficulty"
+    t.string  "variant"
     t.integer "correct_count", default: 0
     t.integer "total_count",   default: 0
   end

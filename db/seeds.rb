@@ -210,6 +210,6 @@ names = [
 
 names.each do |name|
   flag = Flag.create!(name: name)
-  Aggregate.create!(flag: flag, mode: "puzzle", difficulty: "easy")
-  Aggregate.create!(flag: flag, mode: "puzzle", difficulty: "hard")
+  Aggregate.create!(flag: flag, mode: "puzzle", variant: "easy")
+  Aggregate.create!(flag: flag, mode: "puzzle", variant: "hard")
 end
