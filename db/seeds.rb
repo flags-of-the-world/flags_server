@@ -212,4 +212,6 @@ names.each do |name|
   flag = Flag.create!(name: name)
   Aggregate.create!(flag: flag, mode: "puzzle", variant: "easy")
   Aggregate.create!(flag: flag, mode: "puzzle", variant: "hard")
+  Aggregate.create!(flag: flag, mode: "quiz", variant: "image_to_name")
+  Aggregate.create!(flag: flag, mode: "quiz", variant: "name_to_image")
 end
