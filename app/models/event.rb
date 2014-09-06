@@ -13,6 +13,11 @@ class Event
       variant: variant
     ).first
 
+    unless aggregate
+      Rails.logger.error("No aggregate for #{flag_name}. Skipping.")
+      return
+    end
+
     aggregate.correct_count += 1 if correct
     aggregate.total_count += 1
 
